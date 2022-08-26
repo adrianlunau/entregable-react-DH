@@ -13,8 +13,8 @@ const datos = require('./data.json')
 export default function Listado({func}) {
   return (
     <div className='container'>
-      {datos.map((p, index) => (
-        <Item key={index} product={p} func={func}/>
+      {datos.map((p) => (
+        <Item key={p.id} product={p} func={func}/>
       ))}
     </div>
   )
